@@ -1,17 +1,25 @@
+
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <v-app>
+      <p>{{ message }}</p>
+      <record/>
+    </v-app>
   </div>
 </template>
 
 <script>
+import record from "./packs/components/record.vue";
 export default {
-  data: function () {
+  data: function() {
     return {
-      message: "Hello Vue!"
-    }
+      message: "Record List!"
+    };
+  },
+  components: {
+    record: record
   }
-}
+};
 </script>
 
 <style scoped>

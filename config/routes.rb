@@ -2,6 +2,6 @@
 
 Rails.application.routes.draw do
   root to: 'home#index'
-  resources :users
-  get 'app', to: 'users#index'
+  resources :records
+  get 'app', to: 'records#index'
 end
